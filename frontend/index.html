@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Video Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📥 Pro Video Downloader</h1>
+    <p class="tagline">Paste your link below & download instantly</p>
+    
+    <div class="card">
+      <input type="text" id="videoURL" placeholder="Enter video link...">
+      <button onclick="fetchVideo()">Download</button>
+    </div>
+
+    <div id="result" class="result-box hidden">
+      <h2>Preview</h2>
+      <video id="videoPreview" controls></video>
+      <a id="downloadBtn" href="#" download class="download-btn">⬇️ Download Video</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>⚡ Made with ❤️ | Powered by Node.js</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
